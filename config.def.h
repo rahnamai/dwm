@@ -114,7 +114,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} }, // quits
+    { MODKEY,                       XK_q,      quit,           {1} }, // restarts
 
     /*function keys*/
     { 0,                            XF86XK_MonBrightnessUp,      spawn,      {.v = inclight } },
